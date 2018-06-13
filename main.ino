@@ -141,7 +141,7 @@ void readResponse(unsigned int timeout) {
 }
 
 /*
-	Essa função envia algum comando para o ESP8266
+	Essa função envia um determinado comando para o ESP8266
 */
 void sendCommand(String cmd) {
   ESP_Serial.println(cmd);
