@@ -58,6 +58,7 @@ void setup() {
   sendCommand("AT+CWMODE=1");
   readResponse(1000);
 
+  // https://github.com/espressif/ESP8266_AT/wiki/CWJAP
   Serial.println("Conectando a rede...");
   String CWJAP = "\"AT+CWJAP=\"";
   CWJAP += WIRELESS_NAME;
