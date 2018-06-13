@@ -30,6 +30,7 @@ const short PORT = 80;
 // Tambem informamos o nome do campo que iremos enviar
 const String FIELD_NAME = "field1";
 
+// Variavel que contem a resposta enviada pelo ESP
 String response = "";
 
 // Variavel que verifica a ultima vez que a leitura do serial monitor foi realizada 
@@ -41,7 +42,6 @@ unsigned long lastSendData = 0;
 // Aqui ficam declaradas algumas funções auxiliares que usaremos no código
 void sendCommand(String cmd);
 void readResponse(unsigned int timeout);
-void sendData();
 int readSensor();
 
 void setup() {
